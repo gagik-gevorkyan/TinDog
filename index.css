@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+main{    
+    padding-bottom: 1em;
+}
+
+footer{
+    text-align: center;  
+}
+
+#container{
+    display: block;
+    min-width: 430px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+        /* ICONS - IMAGES */
+        
+   /* TOP ICONS */
+   
+header img{
+    cursor: pointer;
+    transform: scale(1);
+    transition:  500ms;
+}
+   
+.profile{ 
+    max-width: 30%;    
+    min-width: 20px;
+}
+
+.logo{    
+    max-width: 25%;
+    min-width: 50px;
+}
+
+.chat{
+    max-width: 30%;
+    min-width: 20px;    
+}
+
+   /* BOTTOM ICONS */
+
+button{
+    cursor: pointer;
+    transform: scale(1);
+    transition:  500ms;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px #E9E9EA;
+    background: white;
+    padding: 0.6em 0.7em;
+}
+
+.crossIcon{
+    margin-right: 1em;
+}
+
+.heartIcon{   
+}
+
+          /* HOVER */
+          
+    /* TOP ICONS HOVER*/
+    
+header img:hover,
+header img:focus{
+    transform: scale(0.9); 
+    opacity: 0.7;
+}
+    
+    /* BOTTOM ICONS HOVER*/
+footer button:hover{
+    transform: scale(1.2);   
+    box-shadow: 10px 10px 20px #E9E9EA; 
+}
+
+.crossIcon:hover{
+    background: #FFE7EF;
+}
+
+.heartIcon:hover{
+    background: #DBFFF4;
+}
+
+/* ======MAIN IMAGE====== */
+
+main img{
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    height: 75vh;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+  /* BIO */  
+  
+.dogsBio{
+    color: #FFF;
+    position: absolute;
+    margin-left: 4em;
+    top: 75%;
+}
+   
+  /* GRADE */
+    
+.grade{
+    width: 40%;
+    max-width: 200px;
+    max-height: 90px;
+    transform: rotate(-30deg);
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: calc((100vw - 150px) / 1.5);
+    top: calc((100vh - 500px) / 1);
+}
